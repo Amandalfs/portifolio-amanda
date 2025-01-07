@@ -11,5 +11,11 @@
         "description": "Full-Stack Developer with expertise in Node.js, React, JavaScript, Git, HTML, CSS, Clean Architecture, and Test-Driven Development (TDD).",
         "button-about": "About me",
         "button-projects": "Projects"
-    }    
+    },
+    "about": {
+        "title": "About Me",
+        "subtitle": "I am a passionate software developer looking for my first opportunity.",
+        "description": "I am passionate about technology because of its transformative power, which improves our lives in countless ways. This passion drives me to constantly seek new learning opportunities. In addition, I spend my free time playing automation games, which reflect my interest in complex systems.",
+        "button-resume": "My Resume"
+    }
 }

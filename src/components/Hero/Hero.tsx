@@ -3,12 +3,13 @@ import computer from "@/assets/computer.svg"
 import { useTranslations } from "next-intl";
 import DocIcon from "../icons/DocIcon";
 import ArrowRight from "@/assets/icons/ArrowRight.svg";
+import ArrowDown from './../icons/ArrowDown';
 
 export default function Hero(){
     const translate = useTranslations("hero"); 
-    return (<section className="flex flex-col justify-center items-center">
+    return (<section id="hero" className="flex flex-col justify-center items-center">
         <Image src={computer} alt="computer" />
-        <article className="flex flex-col gap-6">
+        <article className="flex flex-col gap-6 mx-6">
             <h1 className="text-[40px] font-kalam font-medium leading-10 bg-text-gradient bg-clip-text text-transparent">{translate("title")}</h1>
             <article className="flex flex-col">
                 <h2 className="font-sans font-medium text-2xl text-textPrimary-light leading-8 dark:text-textPrimary-dark">{translate("subtitle")}</h2>
@@ -47,6 +48,15 @@ export default function Hero(){
                     {translate("button-projects")}
                     <Image src={ArrowRight} alt="arrow right" />
                 </button>
+            </article>
+            <article  className="relative">
+                <ArrowDown className="
+                fill-secondaryColor-light
+                dark:fill-secondaryColor-dark
+                absolute
+                bottom-[-120px]
+                right-32
+                "/>
             </article>
         </article>
     </section>)
