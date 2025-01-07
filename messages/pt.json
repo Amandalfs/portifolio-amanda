@@ -4,5 +4,12 @@
         "contacts": "contatos",
         "projects": "projetos",
         "language": "PT"
+    },
+    "hero": {
+        "title": "Olá, sou a Amanda",
+        "subtitle": "Desenvolvedora Full-Stack",
+        "description": "Desenvolvedora Full Stack com expertise em Node.js, React, JavaScript, Git, HTML, CSS, Arquitetura Limpa e Desenvolvimento Orientado a Testes (TDD).",
+        "button-about": "Sobre mim",
+        "button-projects": "Projetos"
     }
 }

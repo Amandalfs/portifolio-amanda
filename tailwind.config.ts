@@ -48,7 +48,10 @@ export default {
       fontFamily: { 
         heeboSans: ["var(--font-heebo-sans)", "sans-serif"],
         kalam: ["var(--font-kalam)", "cursive"],
-      }
+      },
+      backgroundImage: {
+        'text-gradient': 'linear-gradient(to right, #9955E8, #7BFFAF)',
+      },
     },
   },
   plugins: [],
