@@ -23,7 +23,7 @@ export async function GET(_: unknown, { params }: { params: Promise<Params> }): 
       return NextResponse.json({ error: 'Locale not found' }, { status: 404 });
     }
 
-    const data = await fs.readFile(`./src/app/_database/${locale}/database.json`, 'utf8');
+    const data = await fs.readFile(`./src/app/database/${locale}/database.json`, 'utf8');
     const bestProjects = JSON.parse(data);
     return NextResponse.json({ bestProjects });
   } catch (error) {
