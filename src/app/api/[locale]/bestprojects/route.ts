@@ -1,6 +1,7 @@
 import { promises as fs } from 'fs';
 import { NextResponse } from 'next/server';
 import { BestProjectsDto } from './bestProjects.dto';
+import path from 'path';
 
 interface Params {
   locale: string;
@@ -23,7 +24,8 @@ export async function GET(_: unknown, { params }: { params: Promise<Params> }): 
       return NextResponse.json({ error: 'Locale not found' }, { status: 404 });
     }
 
-    const data = await fs.readFile(`./src/app/database/${locale}/database.json`, 'utf8');
+    const filePath = path.resolve(process.cwd(), 'src/app/database/pt/database.json');
+    const data = await fs.readFile(filePath, 'utf8');
     const bestProjects = JSON.parse(data);
     return NextResponse.json({ bestProjects });
   } catch (error) {
