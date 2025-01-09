@@ -10,7 +10,7 @@ import { Typography } from "@/components/ui/typography";
 export default function Hero(){
     const translate = useTranslations("hero");
      
-    return (<section id="home" className="flex flex-col justify-center items-center">
+    return (<section id="home" className="flex flex-col justify-center items-center mt-16">
         <Image src={computer} alt="computer" />
         <article className="flex flex-col gap-6 mx-6">
             <h1 className="text-[40px] font-kalam font-medium leading-10 bg-text-gradient bg-clip-text text-transparent">{translate("title")}</h1>
