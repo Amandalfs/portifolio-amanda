@@ -3,28 +3,28 @@
         {
             "id": "1",
             "title": "Space X",
-            "description": "Vejá as estásticas as de lançamentos da SpaceX",
+            "description": "Check the statistics of SpaceX launches",
             "image": "@/assets/ProjectSpaceX.png",
             "techs": [
                 { 
                     "name": "ReactJs",
-                    "image": "https://example.com/nodejs.jpg"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
                 },
                 {
                     "name": "Typescript",
-                    "image": "https://example.com/nodejs.jpg"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"
                 },
                 {
                     "name": "Tailwind",
-                    "image": "https://example.com/nodejs.jpg"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
                 },
                 {
                     "name": "Node.js",
-                    "image": "https://example.com/nodejs.jpg"   
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"   
                 },
                 {
                     "name": "Knex",
-                    "image": "https://example.com/knex.jpg"
+                    "image": "https://knexjs.org/assets/images/knex.png"
                 }
             ],
             "data": "2025-01-05",
@@ -33,28 +33,28 @@
         {
             "id": "2",
             "title": "Move",
-            "description": "Descrição do projeto 2",
+            "description": "The social network for physical activities where you can create groups and check your average hours of activities performed.",
             "image": "@/assets/ProjectMove.png",
             "techs": [
                 { 
                     "name": "Node.js",
-                    "image": "https://example.com/nodejs.jpg"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
                 },
                 {
                     "name": "Typescript",
-                    "image": "https://example.com/nodejs.jpg"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"
                 },  
                 {
                     "name": "ReactJs",
-                    "image": "https://example.com/nodejs.jpg"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
                 },
                 {
                     "name": "NestJs",
-                    "image": "https://example.com/nodejs.jpg"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/6/64/Logo_nestjs.svg"
                 }, 
                 {
                     "name": "PrismaJs",
-                    "image": "https://example.com/nodejs.jpg"
+                    "image": "https://prismalens.vercel.app/header/logo-dark.svg"
                 }
             ],
             "data": "2024-08-01",
@@ -62,25 +62,25 @@
         },
         {
             "id": "3",
-            "title": "Sem Calote",
-            "description": "Descrição do projeto 3",
+            "title": "Sem calote",
+            "description": "Manage your clients' charges on a single website",
             "image": "@/assets/ProjectSemCalote.png",
             "techs": [
                 { 
                     "name": "Node.js",
-                    "image": "https://example.com/nodejs.jpg"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
                 },
                 {
                     "name": "ReactJs",
-                    "image": "https://example.com/nodejs.jpg"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
                 },
                 {
-                    "name": "javascript",
-                    "image": "https://example.com/javascript.jpg"
+                    "name": "Javascript",
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
                 },
                 {
                     "name": "Knex",
-                    "image": "https://example.com/knex.jpg"
+                    "image": "https://knexjs.org/assets/images/knex.png"
                 }
             ],
             "data": "2023-09-01",
