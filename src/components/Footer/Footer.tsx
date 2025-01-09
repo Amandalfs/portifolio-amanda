@@ -1,6 +1,6 @@
-import { Link } from '@/i18n/routing';
-import { Typography } from '../ui/typography';
-import ArrowUp from '@/components/icons/ArrowUp';
+import { Link } from "@/i18n/routing";
+import { Typography } from "../ui/typography";
+import ArrowUp from "@/components/icons/ArrowUp";
 
 export default function Footer() {  
     return (<footer className="flex h-16">
@@ -16,7 +16,9 @@ export default function Footer() {
                 </Link>
             </li>
             <li>
-                <ArrowUp />
+                <ArrowUp
+                    className="fill-textPrimary-light dark:fill-textPrimary-dark"
+                />
             </li>
         </ul>
     </footer>)
