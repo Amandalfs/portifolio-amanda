@@ -5,18 +5,22 @@ import ReactIcon from "@/assets/icons/ReactIcon.svg";
 import NodeJsIcon from "@/assets/icons/NodeJsIcon.svg";  
 import TailwindIcon from "@/assets/icons/TailwindIcon.svg";
 import { useTranslations } from "next-intl";
-import DocIcon from './../icons/DocIcon';
+import DocIcon from "@/components/icons/DocIcon";
+import { Typography } from "@/components/ui/typography";
 
 export default function About(){
     const  translate = useTranslations("about");
-    return (<section className="
-        flex flex-col 
-        bg-surfacePrimary-light
-        dark:bg-surfacePrimary-dark
-        py-12
-        px-6
-        gap-10
-    ">
+    return (<section 
+        id="about"
+        className="
+            flex flex-col 
+            bg-surfacePrimary-light
+            dark:bg-surfacePrimary-dark
+            py-12
+            px-6
+            gap-10
+        "
+    >
         <Image src={avatarMandy} alt="avatar amanda"/>        
         <article className="flex flex-col gap-8">
             <ul className="flex flex-row gap-6">
@@ -33,12 +37,12 @@ export default function About(){
             </ul>
             <div className="flex flex-col gap-4">
                 <div>
-                    <h2 id="about" className="font-sans font-normal text-base text-secondaryColor-light dark:text-secondaryColor-dark">{translate("title")}</h2>
-                    <h2 className="font-medium font-sans text-textPrimary-light dark:text-textPrimary-dark" >{translate("subtitle")}</h2>
+                    <Typography.sectionTitle>{translate("title")}</Typography.sectionTitle>
+                    <Typography.H2>{translate("subtitle")}</Typography.H2>
                 </div>
-                <p className="font-sans font-normal text-xs text-textSecondary-light dark:text-textSecondary-dark">
+                <Typography.paragraph>
                     {translate("description")}
-                </p>
+                </Typography.paragraph>
             </div>
             <button 
                 className="

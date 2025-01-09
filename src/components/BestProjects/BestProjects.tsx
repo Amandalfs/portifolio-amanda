@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
-import DocIcon from "../icons/DocIcon";
+import DocIcon from "@/components/icons/DocIcon";
+import { Typography } from "@/components/ui/typography";
 
 export default function BestProjects() {
     const translate = useTranslations("bestProjects"); 
@@ -12,8 +13,8 @@ export default function BestProjects() {
             items-center
         ">
         <article className="flex flex-col gap-2 justify-center items-center">
-            <h3 className="font-sans font-normal text-base text-secondaryColor-light dark:text-secondaryColor-dark">{translate("title")}</h3>
-            <h2 className="font-medium font-sans text-textPrimary-light dark:text-textPrimary-dark">{translate("subtitle")}</h2>
+            <Typography.sectionTitle>{translate("title")}</Typography.sectionTitle>
+            <Typography.H2>{translate("subtitle")}</Typography.H2>
         </article>
         <article>
 

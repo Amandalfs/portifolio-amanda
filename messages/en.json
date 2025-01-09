@@ -22,5 +22,14 @@
         "title": "Projects",
         "subtitle": "Here are some of my projects.",
         "button": "View all Project"
+    },
+    "contacts": {
+        "title": "contacts",
+        "subtitle": "Did you like my work? Let's work together",
+        "description": "I'm always ready to chat. Send me an email to $email or contact me through social media.",
+        "email": "amandalfs57@gmail",
+        "button": "Send email",
+        "input-name": "Name",
+        "input-message": "Your message"
     }
 }

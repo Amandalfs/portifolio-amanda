@@ -1,6 +1,7 @@
 'use client'
-import MenuSection from './MenuSection/MenuSection';
+
 import { useState } from 'react';
+import MenuSection from '@/components/Header/MenuSection/MenuSection';
 import MenuIcon from '@/components/icons/MenuIcon';
 import MenuIconClose from '@/components/icons/MenuIconClose';
 
@@ -9,7 +10,7 @@ export default function Header() {
 
     return (
         <>
-            <div className="flex justify-end  bg-surfaceBackground-light dark:bg-surfaceBackground-dark h-[64px] w-[100%] p-2">
+            <div className="fixed flex justify-end  bg-surfaceBackground-light dark:bg-surfaceBackground-dark h-[64px] w-[100%] p-2">
                {    
                     onMenu ?
                     <MenuIconClose  

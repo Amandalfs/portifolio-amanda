@@ -22,5 +22,14 @@
         "title": "Projetos",
         "subtitle": "Dê uma olhada nos meus projetos em destaque.",
         "button": "Ver mais"
+    },
+    "contacts": {
+        "title": "Contatos",
+        "subtitle": "Gostou do meu trabalho? Vamos trabalhar juntos",
+        "description": "Estou sempre pronta para bater um papo. Envie-me um e-mail para $email ou entre em contato  comigo pelas redes sociais.",
+        "email": "amandalfs57@gmail",
+        "button": "Enviar e-mail",
+        "input-name": "Nome",
+        "input-message": "Sua mensagem"
     }
 }

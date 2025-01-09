@@ -1,10 +1,10 @@
 "use client"
-import ButtonIcon from "@/components/ButtonIcon/ButtonIcon";
-import SunDimIcon from "@/components/icons/SunDimIcon";
 import { useTheme } from "next-themes";
 import { Link } from "@/i18n/routing";
 import { usePathname } from "next/navigation";
 import { useParams } from "next/navigation";
+import ButtonIcon from "@/components/ui/ButtonIcon/ButtonIcon";
+import SunDimIcon from "@/components/icons/SunDimIcon";
 
 export default function ChangeMode() {
     const pathname = usePathname();
