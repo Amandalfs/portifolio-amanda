@@ -1,4 +1,5 @@
 import About from "@/components/About/About";
+import BestProjects from "@/components/BestProjects/BestProjects";
 import Header from "@/components/Header/Header";
 import Hero from "@/components/Hero/Hero";
 
@@ -9,6 +10,7 @@ export default function Home() {
       <section className="flex flex-col gap-[46px]">
         <Hero />
         <About />
+        <BestProjects />
       </section>
     </main>
   );

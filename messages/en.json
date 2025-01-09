@@ -17,5 +17,10 @@
         "subtitle": "I am a passionate software developer looking for my first opportunity.",
         "description": "I am passionate about technology because of its transformative power, which improves our lives in countless ways. This passion drives me to constantly seek new learning opportunities. In addition, I spend my free time playing automation games, which reflect my interest in complex systems.",
         "button-resume": "My Resume"
+    },
+    "bestProjects": {
+        "title": "Projects",
+        "subtitle": "Here are some of my projects.",
+        "button": "View all Project"
     }
 }

@@ -1,0 +1,40 @@
+{
+    "bestProjects": [
+        {
+            "id": "1",
+            "title": "Projeto 1",
+            "description": "Descrição do projeto 1",
+            "image": "https://example.com/project1.jpg",
+            "techs": [{ 
+                "name": "Node.js",
+                "image": "https://example.com/nodejs.jpg"
+            }],
+            "data": "2023-09-01",
+            "link": "https://example.com/project1"
+        },
+        {
+            "id": "2",
+            "title": "Projeto 2",
+            "description": "Descrição do projeto 2",
+            "image": "https://example.com/project2.jpg",
+            "techs": [{ 
+                "name": "Node.js",
+                "image": "https://example.com/nodejs.jpg"
+            }],
+            "data": "2023-09-01",
+            "link": "https://example.com/project2"
+        },
+        {
+            "id": "3",
+            "title": "Projeto 3",
+            "description": "Descrição do projeto 3",
+            "image": "https://example.com/project3.jpg",
+            "techs": [{ 
+                "name": "Node.js",
+                "image": "https://example.com/nodejs.jpg"
+            }],
+            "data": "2023-09-01",
+            "link": "https://example.com/project3"
+        }
+    ]
+}

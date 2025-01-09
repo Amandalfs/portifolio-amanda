@@ -26,20 +26,22 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({
   children,
-  params: { locale }
-}: Readonly<{
+  params,
+}:{
   children: React.ReactNode;
-  params: {locale: string};
-}>) {
+  params: Promise<{ locale: string }>
+}) {
+
+  const locale = (await params).locale;
 
   if (!routing.locales.includes(locale as string)) {
     notFound();
   }
 
-  const messages = await getMessages();
+  const messages = await getMessages(); 
 
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html lang={locale}>
       <link rel="icon" href="/avatar.png" sizes="any" />
       <body
         className={`${heebo.variable} ${kalam.variable} antialiased`}

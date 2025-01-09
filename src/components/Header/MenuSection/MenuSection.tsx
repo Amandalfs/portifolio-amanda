@@ -15,6 +15,7 @@ export default function MenuSection() {
         top-15
         right-0
         items-end
+        z-10
         "
     >   
         <ul className="flex flex-col gap-6 text-right">
