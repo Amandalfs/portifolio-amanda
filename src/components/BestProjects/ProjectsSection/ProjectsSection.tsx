@@ -48,7 +48,7 @@ export async function ProjectsSection({params}: {params: Promise<{locale: string
                                 }
                             </ul>
                         </section>
-                        <section className="flex justify-between items-center border-2 border-red-500">  
+                        <section className="flex justify-between items-center">  
                             <div className="flex flex-col gap-2">
                                 <Typography.H2>
                                     {bestProject.title}
