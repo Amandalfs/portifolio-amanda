@@ -7,9 +7,9 @@ import Button from "@/components/ui/Button/Button";
 
 export async function ProjectsSection({params}: {params: {locale: string}}) {
     const locale = (await params).locale
-    console.log(locale)
-
-    const response = await fetch(`http://localhost:3000/api/${locale}/bestprojects`, {
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+    
+    const response = await fetch(`${apiUrl}/api/${locale}/bestprojects`, {
         method: "GET",
     })
     const { bestProjects } = await response.json() as BestProjectsDto
