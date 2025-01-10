@@ -1,9 +1,11 @@
 import { useTranslations } from "next-intl";
 import DocIcon from "@/components/icons/DocIcon";
 import { Typography } from "@/components/ui/typography";
+import { ProjectsSection } from "./ProjectsSection/ProjectsSection";
 
 export default function BestProjects() {
     const translate = useTranslations("bestProjects"); 
+
     return (<section id="projects" className="
             flex  
             flex-col
@@ -16,9 +18,7 @@ export default function BestProjects() {
             <Typography.sectionTitle>{translate("title")}</Typography.sectionTitle>
             <Typography.H2>{translate("subtitle")}</Typography.H2>
         </article>
-        <article>
-
-        </article>
+        <ProjectsSection />
         <button className="
             w-36 h-14 
             bg-surfaceSecondary-light 

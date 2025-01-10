@@ -27,7 +27,7 @@ export async function GET(_: unknown, { params }: { params: Promise<Params> }): 
     const filePath = path.resolve(process.cwd(), 'src/app/database/pt/database.json');
     const data = await fs.readFile(filePath, 'utf8');
     const bestProjects = JSON.parse(data);
-    return NextResponse.json({ bestProjects });
+    return NextResponse.json({ ...bestProjects }, { status: 200 });
   } catch (error) {
     console.log(error);
     return NextResponse.json({ error: 'Failed to load data' }, { status: 500 });

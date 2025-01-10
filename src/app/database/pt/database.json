@@ -4,27 +4,27 @@
             "id": "1",
             "title": "Space X",
             "description": "Vejá as estásticas as de lançamentos da SpaceX",
-            "image": "@/assets/ProjectSpaceX.png",
+            "image": "/assets/ProjectSpaceX.png",
             "techs": [
                 { 
                     "name": "ReactJs",
-                    "image": "https://example.com/nodejs.jpg"
+                    "image": "/icons/react.svg"
                 },
                 {
                     "name": "Typescript",
-                    "image": "https://example.com/nodejs.jpg"
+                    "image": "/icons/typescript.svg"
                 },
                 {
                     "name": "Tailwind",
-                    "image": "https://example.com/nodejs.jpg"
+                    "image": "/icons/tailwind.svg"
                 },
                 {
                     "name": "Node.js",
-                    "image": "https://example.com/nodejs.jpg"   
+                    "image": "/icons/nodejs.svg"   
                 },
                 {
-                    "name": "Knex",
-                    "image": "https://example.com/knex.jpg"
+                    "name": "PrismaJs",
+                    "image": "/icons/prisma.svg"
                 }
             ],
             "data": "2025-01-05",
@@ -34,27 +34,27 @@
             "id": "2",
             "title": "Move",
             "description": "Descrição do projeto 2",
-            "image": "@/assets/ProjectMove.png",
+            "image": "/assets/ProjectMove.png",
             "techs": [
                 { 
                     "name": "Node.js",
-                    "image": "https://example.com/nodejs.jpg"
+                    "image": "/icons/nodejs.svg"
+                },
+                {
+                    "name": "ReactJs",
+                    "image": "/icons/react.svg"
                 },
                 {
                     "name": "Typescript",
-                    "image": "https://example.com/nodejs.jpg"
-                },  
-                {
-                    "name": "ReactJs",
-                    "image": "https://example.com/nodejs.jpg"
-                },
-                {
-                    "name": "NestJs",
-                    "image": "https://example.com/nodejs.jpg"
+                    "image": "/icons/typescript.svg"
                 }, 
                 {
+                    "name": "NestJs",
+                    "image": "/icons/nestjs.svg"
+                },
+                {
                     "name": "PrismaJs",
-                    "image": "https://example.com/nodejs.jpg"
+                    "image": "/icons/prisma.svg"
                 }
             ],
             "data": "2024-08-01",
@@ -64,23 +64,23 @@
             "id": "3",
             "title": "Sem Calote",
             "description": "Descrição do projeto 3",
-            "image": "@/assets/ProjectSemCalote.png",
+            "image": "/assets/ProjectSemCalote.png",
             "techs": [
                 { 
                     "name": "Node.js",
-                    "image": "https://example.com/nodejs.jpg"
+                    "image": "/icons/nodejs.svg"
                 },
                 {
                     "name": "ReactJs",
-                    "image": "https://example.com/nodejs.jpg"
+                    "image": "/icons/react.svg"
                 },
                 {
                     "name": "javascript",
-                    "image": "https://example.com/javascript.jpg"
+                    "image": "/icons/javascript.svg"
                 },
                 {
                     "name": "Knex",
-                    "image": "https://example.com/knex.jpg"
+                    "image": "/icons/knexjs.svg"
                 }
             ],
             "data": "2023-09-01",

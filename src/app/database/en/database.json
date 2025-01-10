@@ -8,23 +8,23 @@
             "techs": [
                 { 
                     "name": "ReactJs",
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+                    "image": "/icons/react.svg"
                 },
                 {
                     "name": "Typescript",
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"
+                    "image": "/icons/typescript.svg"
                 },
                 {
                     "name": "Tailwind",
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+                    "image": "/icons/tailwind.svg"
                 },
                 {
                     "name": "Node.js",
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"   
+                    "image": "/icons/nodejs.svg"   
                 },
                 {
-                    "name": "Knex",
-                    "image": "https://knexjs.org/assets/images/knex.png"
+                    "name": "PrismaJs",
+                    "image": "/icons/prisma.svg"
                 }
             ],
             "data": "2025-01-05",
@@ -38,23 +38,23 @@
             "techs": [
                 { 
                     "name": "Node.js",
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+                    "image": "/icons/nodejs.svg"
+                },
+                {
+                    "name": "ReactJs",
+                    "image": "/icons/react.svg"
                 },
                 {
                     "name": "Typescript",
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"
-                },  
-                {
-                    "name": "ReactJs",
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-                },
-                {
-                    "name": "NestJs",
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/6/64/Logo_nestjs.svg"
+                    "image": "/icons/typescript.svg"
                 }, 
                 {
+                    "name": "NestJs",
+                    "image": "/icons/nestjs.svg"
+                },
+                {
                     "name": "PrismaJs",
-                    "image": "https://prismalens.vercel.app/header/logo-dark.svg"
+                    "image": "/icons/prisma.svg"
                 }
             ],
             "data": "2024-08-01",
@@ -68,19 +68,19 @@
             "techs": [
                 { 
                     "name": "Node.js",
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+                    "image": "/icons/nodejs.svg"
                 },
                 {
                     "name": "ReactJs",
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+                    "image": "/icons/react.svg"
                 },
                 {
-                    "name": "Javascript",
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+                    "name": "javascript",
+                    "image": "/icons/javascript.svg"
                 },
                 {
                     "name": "Knex",
-                    "image": "https://knexjs.org/assets/images/knex.png"
+                    "image": "/icons/knexjs.svg"
                 }
             ],
             "data": "2023-09-01",

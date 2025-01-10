@@ -1,11 +1,9 @@
 import { ComponentProps } from "react"
 import { tv } from "tailwind-variants"
-import ArrowRight from '@/assets/icons/ArrowRight.svg';
-import Image from "next/image";
 
 interface ButtonProps extends ComponentProps<"button">{
     color?: "primary" | "secondary",
-    size?: "sm" | "lg"
+    size?: "md" | "lg" | "sm"
 }
 
 const button = tv({
@@ -32,13 +30,14 @@ const button = tv({
             `
         },
         size: {
-            sm:  "w-36",
-            lg: "w-[266px]" 
+            md:  "w-36",
+            lg: "w-[266px]",
+            sm: "w-24 h-12"
         },
     },
     defaultVariants: {
         color: "primary",
-        size: "sm"
+        size: "md"
     }
 })
 
@@ -51,6 +50,5 @@ export default function Button({
 
     return (<button className={button({ color, size})} {...rest}>
         {children}
-        <Image src={ArrowRight} alt="arrow right" />
     </button>)
 }
