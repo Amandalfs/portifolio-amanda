@@ -27,7 +27,7 @@
                     "image": "/icons/prisma.svg"
                 }
             ],
-            "data": "2025-01-05",
+            "data": "2025-01-05T00:00:00-03:00",
             "link": "https://space-x-app-two.vercel.app/"
         },
         {
@@ -57,7 +57,7 @@
                     "image": "/icons/prisma.svg"
                 }
             ],
-            "data": "2024-08-01",
+            "data": "2024-11-29T00:00:00-03:00",
             "link": "move-frontend-azure.vercel.app"
         },
         {
@@ -83,7 +83,7 @@
                     "image": "/icons/knexjs.svg"
                 }
             ],
-            "data": "2023-09-01",
+            "data": "2023-10-10T00:00:00-03:00",
             "link": "https://example.com/project3"
         }
     ]

@@ -30,7 +30,14 @@ export async function ProjectsSection({params}: {params: Promise<{locale: string
                             />
                         </Link>
                         <section className="flex w-full justify-between">
-                            {new Date(bestProject.data).getFullYear()}
+                            {
+                                new Intl.DateTimeFormat(locale, { 
+                                    month: 'short', 
+                                    day: '2-digit', 
+                                    year: 'numeric', 
+                                    timeZone: 'UTC' 
+                                    }).format(new Date(bestProject.data)).replace(',', '')
+                            }
                             <ul className="flex gap-4">
                                 {
                                     bestProject.techs.map((tech, index) => {
@@ -41,7 +48,7 @@ export async function ProjectsSection({params}: {params: Promise<{locale: string
                                 }
                             </ul>
                         </section>
-                        <section className="flex justify-between items-center">  
+                        <section className="flex justify-between items-center border-2 border-red-500">  
                             <div className="flex flex-col gap-2">
                                 <Typography.H2>
                                     {bestProject.title}
