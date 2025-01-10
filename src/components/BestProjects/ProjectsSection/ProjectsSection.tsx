@@ -5,8 +5,8 @@ import { Typography } from '@/components/ui/typography';
 import { Link } from '@/i18n/routing';
 import Button from "@/components/ui/Button/Button";
 
-export async function ProjectsSection({params}: {params: {locale: string}}) {
-    const locale = params.locale
+export async function ProjectsSection({params}: {params: Promise<{locale: string}>}) {
+    const locale = (await params).locale
     const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
     const response = await fetch(`${apiUrl}/api/${locale}/bestprojects`, {

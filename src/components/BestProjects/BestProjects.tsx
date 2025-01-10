@@ -3,7 +3,7 @@ import DocIcon from "@/components/icons/DocIcon";
 import { Typography } from "@/components/ui/typography";
 import { ProjectsSection } from "./ProjectsSection/ProjectsSection";
 
-export default function BestProjects({ params }: { params: { locale: string } }) {
+export default function BestProjects({ params }: { params: Promise<{ locale: string }> }) {
     const translate = useTranslations("bestProjects"); 
 
     return (<section id="projects" className="
