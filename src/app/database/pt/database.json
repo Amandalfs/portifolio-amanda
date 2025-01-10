@@ -33,7 +33,7 @@
         {
             "id": "2",
             "title": "Move",
-            "description": "Descrição do projeto 2",
+            "description": "A rede social de atividades físicas onde você pode criar grupos e verificar sua média de horas de atividades realizadas.",
             "image": "/assets/ProjectMove.png",
             "techs": [
                 { 
@@ -63,7 +63,7 @@
         {
             "id": "3",
             "title": "Sem Calote",
-            "description": "Descrição do projeto 3",
+            "description": "Gerencie as cobranças de seus clientes em um único site",
             "image": "/assets/ProjectSemCalote.png",
             "techs": [
                 { 

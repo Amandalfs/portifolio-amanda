@@ -5,9 +5,11 @@ import { Typography } from '@/components/ui/typography';
 import { Link } from '@/i18n/routing';
 import Button from "@/components/ui/Button/Button";
 
-export async function ProjectsSection(){
+export async function ProjectsSection({params}: {params: {locale: string}}) {
+    const locale = (await params).locale
+    console.log(locale)
 
-    const response = await fetch(`http://localhost:3000/api/pt/bestprojects`, {
+    const response = await fetch(`http://localhost:3000/api/${locale}/bestprojects`, {
         method: "GET",
     })
     const { bestProjects } = await response.json() as BestProjectsDto
@@ -48,9 +50,11 @@ export async function ProjectsSection(){
                                     {bestProject.description}
                                 </Typography.paragraph>                                
                             </div>
-                            <Button color="primary" size="sm">
-                                Ver detalhes
-                            </Button> 
+                            <Link href={`/projects/${bestProject.id}`}>
+                                <Button color="primary" size="sm">
+                                    {locale === "pt" ? "Ver detalhes" : "See details"}
+                                </Button> 
+                            </Link>
                         </section>
                     </Card.Root>)
                })

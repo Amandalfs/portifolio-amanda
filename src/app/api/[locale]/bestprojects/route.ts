@@ -18,13 +18,12 @@ interface BestProjectsResponse {
 export async function GET(_: unknown, { params }: { params: Promise<Params> }): Promise<NextResponse<BestProjectsResponse | ErrorResponse>> {
   try {
     const locale = (await params).locale;
-    console.log(locale);
 
     if (!["en", "pt"].includes(locale)) {
       return NextResponse.json({ error: 'Locale not found' }, { status: 404 });
     }
 
-    const filePath = path.resolve(process.cwd(), 'src/app/database/pt/database.json');
+    const filePath = path.resolve(process.cwd(), `src/app/database/${locale}/database.json`);
     const data = await fs.readFile(filePath, 'utf8');
     const bestProjects = JSON.parse(data);
     return NextResponse.json({ ...bestProjects }, { status: 200 });

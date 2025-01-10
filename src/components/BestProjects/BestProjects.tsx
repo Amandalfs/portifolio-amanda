@@ -3,7 +3,7 @@ import DocIcon from "@/components/icons/DocIcon";
 import { Typography } from "@/components/ui/typography";
 import { ProjectsSection } from "./ProjectsSection/ProjectsSection";
 
-export default function BestProjects() {
+export default function BestProjects({ params }: { params: { locale: string } }) {
     const translate = useTranslations("bestProjects"); 
 
     return (<section id="projects" className="
@@ -18,7 +18,7 @@ export default function BestProjects() {
             <Typography.sectionTitle>{translate("title")}</Typography.sectionTitle>
             <Typography.H2>{translate("subtitle")}</Typography.H2>
         </article>
-        <ProjectsSection />
+        <ProjectsSection params={params} />
         <button className="
             w-36 h-14 
             bg-surfaceSecondary-light 

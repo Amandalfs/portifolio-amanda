@@ -4,7 +4,7 @@
             "id": "1",
             "title": "Space X",
             "description": "Check the statistics of SpaceX launches",
-            "image": "@/assets/ProjectSpaceX.png",
+            "image": "/assets/ProjectSpaceX.png",
             "techs": [
                 { 
                     "name": "ReactJs",
@@ -34,7 +34,7 @@
             "id": "2",
             "title": "Move",
             "description": "The social network for physical activities where you can create groups and check your average hours of activities performed.",
-            "image": "@/assets/ProjectMove.png",
+            "image": "/assets/ProjectMove.png",
             "techs": [
                 { 
                     "name": "Node.js",
@@ -64,7 +64,7 @@
             "id": "3",
             "title": "Sem calote",
             "description": "Manage your clients' charges on a single website",
-            "image": "@/assets/ProjectSemCalote.png",
+            "image": "/assets/ProjectSemCalote.png",
             "techs": [
                 { 
                     "name": "Node.js",
