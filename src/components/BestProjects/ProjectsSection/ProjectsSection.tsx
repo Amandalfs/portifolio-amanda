@@ -1,8 +1,8 @@
 import { BestProjectsDto } from "@/app/api/[locale]/bestprojects/bestProjects.dto";
 import { Card } from "@/components/ui/Card/Index";
 import Image from "next/image";
-import { Typography } from '@/components/ui/typography';
-import { Link } from '@/i18n/routing';
+import { Typography } from "@/components/ui/typography";
+import { Link } from "@/i18n/routing";
 import Button from "@/components/ui/Button/Button";
 
 export async function ProjectsSection({params}: {params: Promise<{locale: string}>}) {
@@ -17,6 +17,7 @@ export async function ProjectsSection({params}: {params: Promise<{locale: string
     return (<article className="flex flex-col gap-6">
             {
               bestProjects && bestProjects?.map((bestProject)=> {
+                    const formattedDate = new Date(bestProject.data);
                     return (<Card.Root
                     key={bestProject.id}>
                         <Link href={`${bestProject.link}`} target="_blank">
@@ -32,18 +33,18 @@ export async function ProjectsSection({params}: {params: Promise<{locale: string
                         <section className="flex w-full justify-between">
                             {
                                 new Intl.DateTimeFormat(locale, { 
-                                    month: 'short', 
-                                    day: '2-digit', 
-                                    year: 'numeric', 
-                                    timeZone: 'UTC' 
-                                    }).format(new Date(bestProject.data)).replace(',', '')
+                                    month: "short", 
+                                    day: "2-digit", 
+                                    year: "numeric", 
+                                    timeZone: "UTC" 
+                                    }).format(formattedDate).replace(",", "")
                             }
                             <ul className="flex gap-4">
                                 {
                                     bestProject.techs.map((tech, index) => {
                                         return (<li key={index}>
                                             <Image 
-                                                className="fill-textSecondary-light dark:fill-textSecondary-dark h-auto w-auto"
+                                                className="fill-textSecondary-light dark:fill-textSecondary-dark"
                                                 src={tech.image} alt={tech.name} width={32} height={32} 
                                             />
                                         </li>)

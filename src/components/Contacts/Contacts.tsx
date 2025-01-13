@@ -32,11 +32,11 @@ export default function Contacts() {
                     </Typography.sectionTitle>
                     <Typography.H2>{translate("subtitle")}</Typography.H2>
                 </div>
-                <p>
+                <div>
                     {translate("description").split("$email")[0]}
                     <Typography.span>{translate("email")}</Typography.span>
                     {translate("description").split("$email")[1]}
-                </p>
+                </div>
                 <ul className="flex gap-2">
                     <li>
                         <Link href="https://github.com/amandalfs" target="_blank">
