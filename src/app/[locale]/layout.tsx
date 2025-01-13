@@ -44,7 +44,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <link rel="icon" href="/avatar.png" sizes="any" />
+      <link rel="icon" href="/avatar.svg" sizes="any" />
       <body
         className={`${heebo.variable} ${kalam.variable} antialiased`}
       >
