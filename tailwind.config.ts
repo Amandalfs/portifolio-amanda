@@ -50,7 +50,8 @@ export default {
         kalam: ["var(--font-kalam)", "cursive"],
       },
       backgroundImage: {
-        'text-gradient': 'linear-gradient(to right, #9955E8, #7BFFAF)',
+        "text-gradient": "linear-gradient(to right, #9955E8,  #EA638C)",
+        "text-gradient-dark": "linear-gradient(to right, #9955E8, #7BFFAF)",
       },
     },
   },
