@@ -7,7 +7,7 @@ import TailwindcssIcon from "@/assets/icons/TailwindIcon.svg"
 import { Link } from "@/i18n/routing";
 
 export default function Page(){
-    return (<section className="flex flex-col pt-24 gap-8">
+    return (<section className="flex flex-col pt-24 gap-8 pb-8">
         <article className="flex flex-col gap-6">
             <div className="relative w-full h-52" >
                 <Image
