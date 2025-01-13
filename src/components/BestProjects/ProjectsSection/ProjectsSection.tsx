@@ -16,7 +16,7 @@ export async function ProjectsSection({params}: {params: Promise<{locale: string
 
     return (<article className="flex flex-col gap-6">
             {
-               bestProjects.map((bestProject)=> {
+              bestProjects && bestProjects?.map((bestProject)=> {
                     return (<Card.Root
                     key={bestProject.id}>
                         <Link href={`${bestProject.link}`} target="_blank">
