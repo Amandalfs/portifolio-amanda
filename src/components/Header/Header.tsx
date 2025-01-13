@@ -10,7 +10,7 @@ export default function Header() {
 
     return (
         <>
-            <div className="fixed flex justify-end  bg-surfaceBackground-light dark:bg-surfaceBackground-dark h-[64px] w-[100%] p-2">
+            <header className="fixed flex justify-end  bg-surfaceBackground-light dark:bg-surfaceBackground-dark h-[64px] w-[100%] p-2">
                {    
                     onMenu ?
                     <MenuIconClose  
@@ -24,7 +24,7 @@ export default function Header() {
                             dark:fill-textPrimary-dark"  
                         onClick={() => setOnMenu(!onMenu)} />
                 }
-            </div>
+            </header>
             {
                 onMenu && <MenuSection/>
             }

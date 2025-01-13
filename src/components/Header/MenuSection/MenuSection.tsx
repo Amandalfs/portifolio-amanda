@@ -5,7 +5,7 @@ import ChangeMode from "@/components/Header/MenuSection/ChangeMode/ChangeMode";
 export default function MenuSection() {
     const translate = useTranslations("menu");
 
-    return (<section 
+    return (<nav 
         className="w-[280px] h-screen 
         bg-surfacePrimary-light
         dark:bg-surfacePrimary-dark
@@ -44,6 +44,6 @@ export default function MenuSection() {
         </ul>
         <div className="flex border-1 h-px w-full bg-secondaryColor-light dark:bg-secondaryColor-dark" />
         <ChangeMode />
-    </section>
+    </nav>
     );
 }
