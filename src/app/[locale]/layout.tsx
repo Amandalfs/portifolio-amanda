@@ -42,26 +42,29 @@ export default async function RootLayout({
 
   const messages = await getMessages(); 
 
-  return (
-    <html lang={locale}>
-      <link rel="icon" href="/avatar.svg" sizes="any" />
-      <body
-        className={`${heebo.variable} ${kalam.variable} antialiased`}
-      >
-        <NextIntlClientProvider messages={messages}>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="light"
-            disableTransitionOnChange
-            >
-            <main className="w-screen h-screen bg-surfaceBackground-light dark:bg-surfaceBackground-dark text-textPrimary-light dark:text-textPrimary-dark">
-              <Header />
-              {children}
-              <Footer />
-            </main>
-          </ThemeProvider>
-        </NextIntlClientProvider>
-      </body>
-    </html>
-  );
+  if(locale){
+    return (
+      <html lang={locale}>
+        <link rel="icon" href="/avatar.svg" sizes="any" />
+        <body
+          className={`${heebo.variable} ${kalam.variable} antialiased`}
+        >
+          <NextIntlClientProvider messages={messages}>
+            <ThemeProvider
+              attribute="class"
+              defaultTheme="light"
+              disableTransitionOnChange
+              >
+              <main className="w-screen h-screen bg-surfaceBackground-light dark:bg-surfaceBackground-dark text-textPrimary-light dark:text-textPrimary-dark">
+                <Header />
+                {children}
+                <Footer />
+              </main>
+            </ThemeProvider>
+          </NextIntlClientProvider>
+        </body>
+      </html>
+    );
+  }
+ 
 }
