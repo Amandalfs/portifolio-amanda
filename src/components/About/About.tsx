@@ -1,4 +1,3 @@
-import avatarMandy from "@/assets/avatarMandy.svg";
 import Image from "next/image";
 import JavascriptIcon from "@/assets/icons/JavaScriptIcon.svg";
 import ReactIcon from "@/assets/icons/ReactIcon.svg";
@@ -7,6 +6,7 @@ import TailwindIcon from "@/assets/icons/TailwindIcon.svg";
 import { useTranslations } from "next-intl";
 import DocIcon from "@/components/icons/DocIcon";
 import { Typography } from "@/components/ui/typography";
+import AvatarMandy from "@/components/imagens/AvatarMandy";
 
 export default function About(){
     const  translate = useTranslations("about");
@@ -21,7 +21,7 @@ export default function About(){
             gap-10
         "
     >
-        <Image src={avatarMandy} alt="avatar amanda"/>        
+        <AvatarMandy />      
         <article className="flex flex-col gap-8">
             <ul className="flex flex-row gap-6">
                 <li>

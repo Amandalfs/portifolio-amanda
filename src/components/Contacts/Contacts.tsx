@@ -1,14 +1,13 @@
-import Image  from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
-import ContactAvatar from "@/assets/contact-avatar.svg";
 import GithubIcon from "@/components/icons/GitHubIcon";
 import LinkedinIcon from "@/components/icons/LinkedinIcon";
 import ButtonIcon from "@/components/ui/ButtonIcon/ButtonIcon";
 import Input from "@/components/ui/Input/Input";
 import { Typography } from "@/components/ui/typography";
-import TextArea from "../ui/TextArea/TextArea";
-import Button from "../ui/Button/Button";
+import TextArea from "@/components/ui/TextArea/TextArea";
+import Button from "@/components/ui/Button/Button";
+import ContactMandy from "@/components/imagens/ContactMandy";
 
 export default function Contacts() {
     const translate = useTranslations("contacts");
@@ -25,7 +24,7 @@ export default function Contacts() {
         "
     >
         <article className="flex flex-col gap-10">
-            <Image src={ContactAvatar} alt="contact avatar"/>
+            <ContactMandy />
             <div className="flex flex-col gap-4">
                 <div>
                     <Typography.sectionTitle>
