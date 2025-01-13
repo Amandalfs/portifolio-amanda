@@ -1,9 +1,8 @@
-'use client'
-
-import { useState } from 'react';
-import MenuSection from '@/components/Header/MenuSection/MenuSection';
-import MenuIcon from '@/components/icons/MenuIcon';
-import MenuIconClose from '@/components/icons/MenuIconClose';
+"use client"
+import { useState } from "react";
+import MenuSection from "@/components/Header/MenuSection/MenuSection";
+import MenuIcon from "@/components/icons/MenuIcon";
+import MenuIconClose from "@/components/icons/MenuIconClose";
 
 export default function Header() {
     const [onMenu, setOnMenu] = useState(false);
