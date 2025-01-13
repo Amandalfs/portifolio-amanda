@@ -41,9 +41,12 @@ export async function ProjectsSection({params}: {params: Promise<{locale: string
                             <ul className="flex gap-4">
                                 {
                                     bestProject.techs.map((tech, index) => {
-                                        return (<li key={index}><Image 
-                                            className="fill-textSecondary-light dark:fill-textSecondary-dark"
-                                            src={tech.image} alt={tech.name} width={32} height={32} /></li>)
+                                        return (<li key={index}>
+                                            <Image 
+                                                className="fill-textSecondary-light dark:fill-textSecondary-dark h-auto w-auto"
+                                                src={tech.image} alt={tech.name} width={32} height={32} 
+                                            />
+                                        </li>)
                                     })
                                 }
                             </ul>

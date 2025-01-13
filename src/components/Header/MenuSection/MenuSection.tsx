@@ -22,22 +22,22 @@ export default function MenuSection() {
     >   
         <ul className="flex flex-col gap-6 text-right">
             <li className="text-textPrimary-light dark:text-textPrimary-dark text-xs font-bold">
-                <Link href="#home">
+                <Link href="/#home">
                     Home
                 </Link>
             </li>
             <li className="text-textSecondary-light dark:text-textSecondary-dark text-xs">
-                <Link href="#about">
+                <Link href="/#about">
                     {translate("about")}
                 </Link>
             </li>
             <li className="text-textSecondary-light dark:text-textSecondary-dark text-xs">
-                <Link href="projects">
+                <Link href="/#projects">
                     {translate("projects")}
                 </Link>
             </li>
             <li className="text-textSecondary-light dark:text-textSecondary-dark text-xs">
-                <Link href="#contacts">
+                <Link href="/#contacts">
                     {translate("contacts")}
                 </Link>
             </li> 
