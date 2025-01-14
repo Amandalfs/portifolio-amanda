@@ -14,7 +14,7 @@ export async function ProjectsSection({params}: {params: Promise<{locale: string
     })
     const { bestProjects } = await response.json() as BestProjectsDto
 
-    return (<article className="flex flex-col gap-6">
+    return (<article className="flex flex-col md:flex-row gap-6">
             {
               bestProjects && bestProjects?.map((bestProject)=> {
                     const formattedDate = new Date(bestProject.data);

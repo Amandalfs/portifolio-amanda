@@ -21,9 +21,11 @@ export default function Contacts() {
             py-12
             px-6
             gap-10
+            md:flex-row
+            md:justify-around
         "
     >
-        <article className="flex flex-col gap-10">
+        <article className="flex flex-col gap-10 md:w-[592px]">
             <ContactMandy />
             <div className="flex flex-col gap-4">
                 <div>
@@ -55,7 +57,7 @@ export default function Contacts() {
                 </ul>
             </div>
         </article>
-        <form className="flex flex-col gap-4">
+        <form className="flex flex-col gap-4 md:w-[488px]">
             <Input type="text" placeholder={translate("input-name")} />
             <Input type="e-mail" placeholder="E-mail" />
             <TextArea placeholder={translate("input-message")} />
