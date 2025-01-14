@@ -19,7 +19,7 @@ export interface ProjectDetail {
     team: Team[] | null;
     isSolo: boolean;
     techs: Tech[];
-    data: Date;
+    date: Date;
     link: string;
 }
 

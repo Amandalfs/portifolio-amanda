@@ -3,71 +3,110 @@ import ButtonIcon from "@/components/ui/ButtonIcon/ButtonIcon";
 import { Typography } from "@/components/ui/typography";
 import Image from "next/image";
 import ArrowLeft from "@/components/icons/ArrowLeft";
-import TailwindcssIcon from "@/assets/icons/TailwindIcon.svg"
 import { Link } from "@/i18n/routing";
+import { FindProjectById } from "@/app/api/[locale]/projects/[id]/projectById.dto";
 
-export default function Page(){
+export default async function Page({ params }: { params: Promise<{ locale: string, id: string }> }) {
+    const locale = (await params).locale;
+    const id = (await params).id;
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+
+    const response = await fetch(`${apiUrl}/api/${locale}/projects/${id}`, {
+        method: "GET",
+    })
+
+    const { project } = await response.json() as FindProjectById
+
+    let formattedMembers = "";
+    if(!project.isSolo && project.team){
+        const members = project.team.map((member)=> {
+            return `${member.name} (${member.role})`
+        })
+
+        formattedMembers = members.join(", ")
+    }
+    
+    const formattedDate =  new Date(project.date);
+
     return (<section className="flex flex-col pt-24 gap-8 pb-8">
-        <article className="flex flex-col gap-6">
-            <div className="relative w-full h-52" >
-                <Image
-                    className="w-full h-52" 
-                    width={500}
-                    height={200}
-                    src={"/assets/ProjectMove.png"} 
-                    alt="image project" 
-                />
-                <Link href={"/"}>
-                    <ButtonIcon
-                        className="absolute top-4 left-4"
-                    >
-                            <ArrowLeft className="fill-textPrimary-light dark:fill-textPrimary-dark" />
-                    </ButtonIcon>
-                </Link> 
-            </div>
-            <div className="flex flex-col mx-6 gap-6 pb-12">
-                <div className="flex justify-between">
-                    <Typography.paragraph>
-                        Jul - Dec 2022
-                    </Typography.paragraph>
-                    <ul>
-                        <li key={1}>
-                            <Image 
-                                className="fill-textSecondary-light dark:fill-textSecondary-dark"
-                                src={TailwindcssIcon} 
-                                alt={"TailwindcssIcon"} 
-                                width={32} 
-                                height={32} 
-                            />
-                        </li>
-                    </ul>
+        {project && (<>
+            <article className="flex flex-col gap-6">
+                <div className="relative w-full h-52" >
+                    <Image
+                        className="w-full h-52"
+                        width={500}
+                        height={200}
+                        src={project.image}
+                        alt="image project"
+                    />
+                    <Link href={"/"}>
+                        <ButtonIcon
+                            className="absolute top-4 left-4"
+                        >
+                                <ArrowLeft className="fill-textPrimary-light dark:fill-textPrimary-dark" />
+                        </ButtonIcon>
+                    </Link>
                 </div>
-                <Typography.H2>Space X</Typography.H2>
-                <div className="flex flex-col gap-6">
-                    <div>
-                        <span className="font-bold text-textSecondary-light dark:text-textSecondary-dark">Minha função: </span>Full Stack
+                <div className="flex flex-col mx-6 gap-6 pb-12">
+                    <div className="flex justify-between">
+                        <Typography.paragraph>
+                            {
+                                new Intl.DateTimeFormat(locale, { 
+                                    month: "short", 
+                                    day: "2-digit", 
+                                    year: "numeric", 
+                                    timeZone: "UTC" 
+                                    }).format(formattedDate).replace(",", "")
+                            }
+                        </Typography.paragraph>
+                        <ul className="flex gap-4">
+                          {
+                            project.techs && project.techs.map((tech, index) =>{
+                                return (<li key={index}>
+                                    <Image
+                                        className="fill-textSecondary-light dark:fill-textSecondary-dark"
+                                        src={tech.image}
+                                        alt={tech.name}
+                                        width={32}
+                                        height={32}
+                                    />
+                                </li>)
+                            })
+                          }
+                        </ul>
                     </div>
-                    <div>
-                        <span className="font-bold text-textSecondary-light dark:text-textSecondary-dark">time: </span> projeto Solo
+                    <h1 className="font-medium text-3xl leading-10 text-textPrimary-light dark:text-textPrimary-dark">{project.title}</h1>
+                    <div className="flex flex-col gap-6">
+                        <div>
+                            <span className="font-bold text-textSecondary-light dark:text-textSecondary-dark">{locale === "en" ? "role: " : "minha função:"} </span>{project.role}
+                        </div>
+                        <div>
+                            {!project.isSolo && (
+                                <span className="font-bold text-textSecondary-light dark:text-textSecondary-dark">
+                                    {locale === "en" ? "team: " : "time: "}{formattedMembers}
+                                </span>) }
+                            {project.isSolo && (
+                            <span className="font-bold text-textSecondary-light dark:text-textSecondary-dark">
+                                {locale === "en" ? "team: " : "time: "}{"Solo"}
+                            </span>) }
+                        </div>
+                        <Typography.paragraph>
+                          {project.descriptionDetail}
+                        </Typography.paragraph>
                     </div>
-                    <Typography.paragraph>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia maiores minima ducimus odit tenetur, magnam autem ipsam natus unde omnis sunt consequuntur repellat provident officiis, nihil dolorum perferendis voluptatem repudiandae.
-                        Fuga alias aliquid quo, blanditiis facere magni earum quidem pariatur, repellendus, eveniet a distinctio. Delectus eius nobis impedit debitis enim sunt accusantium laudantium, voluptatibus adipisci ullam, quaerat, neque ipsa repellat.
-                        <br />
-                        Eveniet ipsam numquam magnam aut ipsa voluptatibus et delectus molestiae iure enim fugit quisquam sint ullam esse, similique itaque accusantium ea rem eligendi, tempore odio reiciendis nemo, quos saepe! Quisquam.
-                        Similique sint natus porro eius sed earum blanditiis reprehenderit numquam cumque nulla ut exercitationem deserunt pariatur fuga laborum quaerat, voluptates repellat, voluptatibus rem est error illo consectetur. Corrupti, quia sequi.
-                        Dolore et voluptatibus atque rerum, omnis, laboriosam exercitationem tenetur incidunt voluptate suscipit, corrupti voluptatem fugiat distinctio! Fugiat, veniam cumque illum voluptas eum officia odio consectetur similique consequatur vel, dolores quam?
-                        Perspiciatis iusto itaque consequatur cupiditate tempora qui vero vitae odio omnis labore corporis beatae enim, adipisci debitis, harum, architecto eligendi consequuntur neque! Totam exercitationem quia eum non? Aliquid, temporibus fugiat.
-                    </Typography.paragraph>
                 </div>
-            </div>
-        </article>
-        <article className="flex flex-col justify-center items-center gap-6 p-6 bg-surfacePrimary-light dark:bg-surfacePrimary-dark">
-            <Typography.H2>Dê uma olhada neste projeto</Typography.H2>
-            <div className="flex flex-col gap-2">
-                <Button size="lg">Live demo</Button>
-                <Button size="lg" color="secondary">Code</Button>
-            </div>
-        </article>
+            </article>
+            <article className="flex flex-col justify-center items-center gap-6 p-6 bg-surfacePrimary-light dark:bg-surfacePrimary-dark">
+                <Typography.H2>Dê uma olhada neste projeto</Typography.H2>
+                <div className="flex flex-col gap-2">
+                    <Link href={project.demo} target="_blank">
+                        <Button size="lg">Live demo</Button>
+                    </Link>
+                    <Link href={project.github} target="_blank">
+                        <Button size="lg" color="secondary">Code</Button>
+                    </Link>
+                </div>
+            </article>
+        </>)}
     </section>)
 }
