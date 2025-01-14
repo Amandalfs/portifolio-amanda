@@ -19,10 +19,15 @@ export default function About(){
             py-12
             px-6
             gap-10
+            md:flex-row
+            md:gap-36
+            md:justify-around
+            md:px-0
+            md:mx-6
         "
     >
         <AvatarMandy />      
-        <article className="flex flex-col gap-8">
+        <article className="flex flex-col gap-8 md:w-[592px]">
             <ul className="flex flex-row gap-6">
                 <li>
                     <Image src={JavascriptIcon} alt="javascript icon"/>
