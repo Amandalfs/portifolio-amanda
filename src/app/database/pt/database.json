@@ -124,7 +124,7 @@
             "role": "Full Stack",
             "github": "https://github.com/Move-HandsOn/",
             "demo": "https://move-frontend-azure.vercel.app/",
-            "descriptionDetail": "The social network for physical activities where you can create groups and check your average hours of activities performed.",
+            "descriptionDetail": "O Move é uma rede social focada em atividades físicas, permitindo que os usuários compartilhem suas práticas, entrem em grupos existentes ou criem seus próprios grupos para discussões específicas ou organização de eventos.\n\nO site oferece diversas funcionalidades para gerenciar atividades e eventos, incluindo:\n- **Agenda personalizada:** permite visualizar os eventos agendados para um dia específico.\n- **Perfil do usuário:** exibe um gráfico de colunas com o total de horas de atividades físicas realizadas, notificações de curtidas, seguidores, interações em comentários e uma lista completa de publicações.\n\nMinha responsabilidade no projeto incluiu:\n- Desenvolver os componentes de formulários do site.\n- Criar toda a lógica de gerenciamento da agenda do usuário, proporcionando a melhor experiência possível.\n- Implementar a integração do feed com uma API que fornece informações como nome de usuário, publicações, e um carrossel de grupos.\n\nEsse projeto foi concluído com sucesso graças à excelente comunicação e organização da equipe. Todos os membros eram responsáveis por suas tarefas e mantinham o time atualizado sobre qualquer imprevisto. Além disso, o suporte constante do time de UX/UI garantiu clareza nas regras de negócio e nas interfaces.",
             "team":  [
                 {
                     "name": "Amanda Oliveira",

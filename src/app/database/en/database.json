@@ -124,7 +124,7 @@
             "role": "Full Stack",
             "github": "https://github.com/Move-HandsOn/",
             "demo": "https://move-frontend-azure.vercel.app/",
-            "description-detail": "The social network for physical activities where you can create groups and check your average hours of activities performed.",
+            "description-detail": "Move is a social network focused on physical activities, enabling users to share their practices, join existing groups, or create their own groups for specific discussions or event organization.\n\nThe platform offers a variety of features to manage activities and events, including:\n- **Personalized schedule:** allows users to view events scheduled for a selected day.\n- **User profile:** displays a bar chart showing the total hours of physical activities, notifications of likes, followers, comment interactions, and a complete list of the user’s posts.\n\nMy responsibilities in this project included:\n- Developing the site's form components.\n- Creating the entire logic for managing the user’s schedule, ensuring an optimal user experience.\n- Implementing the feed integration with an API that provides information such as user names, posts, and a group carousel.\n\nThis project was successfully completed due to the team's excellent communication and organization. Every member was responsible for their tasks and kept the team updated on any issues. Additionally, constant support from the UX/UI team ensured clarity in business rules and interfaces.",
             "team":  [
                 {
                     "name": "Amanda Oliveira",
