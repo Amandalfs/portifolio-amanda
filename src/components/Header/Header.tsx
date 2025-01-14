@@ -9,7 +9,7 @@ export default function Header() {
 
     return (
         <>
-            <header className="fixed flex justify-end  bg-surfaceBackground-light dark:bg-surfaceBackground-dark h-[64px] w-[100%] p-2">
+            <header className="fixed flex justify-end  bg-surfaceBackground-light dark:bg-surfaceBackground-dark h-[64px] w-[100%] p-2 z-20">
                {    
                     onMenu ?
                     <MenuIconClose  
