@@ -86,5 +86,135 @@
             "data": "2023-10-10T00:00:00-03:00",
             "link": "https://example.com/project3"
         }
+    ],
+    "projects": [
+        {
+            "id": "1",
+            "title": "Space X",
+            "role": "Full Stack",
+            "descriptionDetail": "Check the statistics of SpaceX launches",
+            "github": "https://github.com/Amandalfs/SpaceX_app",
+            "demo": "https://space-x-app-two.vercel.app/",
+            "team": null,
+            "isSolo": true,
+            "image": "/assets/ProjectSpaceX.png",
+            "techs": [
+                { 
+                    "name": "ReactJs",
+                    "image": "/icons/react.svg"
+                },
+                {
+                    "name": "Typescript",
+                    "image": "/icons/typescript.svg"
+                },
+                {
+                    "name": "Tailwind",
+                    "image": "/icons/tailwind.svg"
+                },
+                {
+                    "name": "Node.js",
+                    "image": "/icons/nodejs.svg"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "title": "Move",
+            "role": "Full Stack",
+            "github": "https://github.com/Move-HandsOn/",
+            "demo": "https://move-frontend-azure.vercel.app/",
+            "descriptionDetail": "The social network for physical activities where you can create groups and check your average hours of activities performed.",
+            "team":  [
+                {
+                    "name": "Amanda Oliveira",
+                    "role": "Back End"
+                },
+                {
+                    "name": "Isabella Brito",
+                    "role": "Front End"
+                },
+                {
+                    "name": "Adrian",
+                    "role": "UX/UI"
+                },
+                {
+                    "name": "Thalita",
+                    "role": "UX/UI"
+                },
+                {
+                    "name": "Éli",
+                    "role": "UX/UI"
+                },
+                {
+                    "name": "Samara",
+                    "role": "UX/UI"
+                }
+            ],
+            "isSolo": false,
+            "image": "/assets/ProjectMove.png",
+            "techs": [
+                { 
+                    "name": "Node.js",
+                    "image": "/icons/nodejs.svg"
+                },
+                {
+                    "name": "ReactJs",
+                    "image": "/icons/react.svg"
+                },
+                {
+                    "name": "Typescript",
+                    "image": "/icons/typescript.svg"
+        }
+
+            ]
+        },
+        {
+            "id": "3",
+            "title": "Sem calote",
+            "role": "Full Stack",
+            "github": "https://github.com/LuizLimaDev/front-back-mountain-frontend",
+            "demo": "https://front-back-mountain-frontend.vercel.app",
+            "descriptionDetail": "Manage your clients' charges on a single website",
+            "team": [
+                {
+                    "name": "Eduardo Alcântara",
+                    "role": "Front End"
+                },
+                {
+                    "name": "Fernanda Campelo",
+                    "role": "Full Stack"
+                }, 
+                {
+                    "name": "Luiz Lima",
+                    "role": "Full Stack"
+                },
+                {
+                    "name": "Igor Beserra",
+                    "role":"Front End"
+                }
+            ]
+            ,
+            "isSolo": false,
+            "image": "/assets/ProjectSemCalote.png",
+            "techs": [
+                { 
+                    "name": "Node.js",
+                    "image": "/icons/nodejs.svg"
+                },
+                {
+                    "name": "ReactJs",
+                    "image": "/icons/react.svg"
+                },
+                {
+                    "name": "javascript",
+                    "image": "/icons/javascript.svg"
+                },
+                {   
+                    "name": "Knex",
+                    "image": "/icons/knexjs.svg"
+                }
+            ]
+        }
+
     ]
 }
