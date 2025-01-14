@@ -28,14 +28,24 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
     
     const formattedDate =  new Date(project.date);
 
-    return (<section className="flex flex-col pt-24 gap-8 pb-8">
+    return (<section className="min-h-screen flex flex-col pt-24 gap-8 pb-8 md:flex-row md:justify-center">
         {project && (<>
-            <article className="flex flex-col gap-6">
-                <div className="relative w-full h-52" >
+            <article 
+                className="
+                    flex 
+                    flex-col 
+                    gap-6
+                    bg-surfacePrimary-light
+                    dark:bg-surfacePrimary-dark
+                    md:w-[800px]
+                    md:rounded-2xl
+                "
+            >
+                <div className="relative w-full h-52 md:w-[800px] md:h-[360px]" >
                     <Image
-                        className="w-full h-52"
-                        width={500}
-                        height={200}
+                        className="w-full h-52 md:w-[800px] md:h-[360px] md:rounded-t-2xl"
+                        width={800}
+                        height={800}
                         src={project.image}
                         alt="image project"
                     />
@@ -96,7 +106,18 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
                     </div>
                 </div>
             </article>
-            <article className="flex flex-col justify-center items-center gap-6 p-6 bg-surfacePrimary-light dark:bg-surfacePrimary-dark">
+            <article 
+                className="
+                    flex flex-col 
+                    justify-center 
+                    items-center 
+                    gap-6 p-6 
+                    bg-surfacePrimary-light 
+                    dark:bg-surfacePrimary-dark
+                    md:w-[384px]
+                    md:h-[248px]
+                    md:rounded-2xl
+                ">
                 <Typography.H2>Dê uma olhada neste projeto</Typography.H2>
                 <div className="flex flex-col gap-2">
                     <Link href={project.demo} target="_blank">
