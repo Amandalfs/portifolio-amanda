@@ -176,7 +176,7 @@
             "role": "Full Stack",
             "github": "https://github.com/LuizLimaDev/front-back-mountain-frontend",
             "demo": "https://front-back-mountain-frontend.vercel.app",
-            "descriptionDetail": "Manage your clients' charges on a single website",
+            "descriptionDetail": "O site Sem Calote foi o último projeto que desenvolvi durante o curso da Cubos Academy. O objetivo do projeto era permitir que trabalhássemos em equipe para criar um site funcional e colaborativo.\n\nMinha principal responsabilidade foi dar suporte aos meus colegas no backend, ajudando no desenvolvimento das tabelas do banco de dados e na implementação de funcionalidades tanto no backend quanto no frontend.\n\nO projeto foi dividido em três sprints, e nossa equipe conseguiu entregar todas as tarefas de cada sprint com sucesso. Durante as sprints, aprendi a trabalhar melhor em equipe e a me comunicar de forma eficaz para alinhar pensamentos e estratégias com todos os membros do time.\n\nAlém disso, realizei algumas manutenções no deploy do backend para manter o projeto ativo, verificando o banco de dados e a funcionalidade geral da aplicação. Como tínhamos tempo disponível, também implementamos o Swagger para documentar todas as rotas, facilitando revisões e futuras melhorias.",
             "team": [
                 {
                     "name": "Eduardo Alcântara",

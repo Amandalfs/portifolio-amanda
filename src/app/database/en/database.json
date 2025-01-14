@@ -176,7 +176,7 @@
             "role": "Full Stack",
             "github": "https://github.com/LuizLimaDev/front-back-mountain-frontend",
             "demo": "https://front-back-mountain-frontend.vercel.app",
-            "description-detail": "Manage your clients' charges on a single website",
+            "description-detail": "The Sem Calote website was the final project I worked on during the Cubos Academy course. The goal of the project was to allow us to collaborate as a team to build a functional and cohesive website.\n\nMy main responsibility was to support my colleagues on the backend, assisting in the development of database tables and implementing features on both the backend and frontend.\n\nThe project was divided into three sprints, and our team successfully delivered all tasks for each sprint. During the sprints, I learned how to collaborate more effectively and communicate properly to ensure everyone was aligned with the same vision and strategy.\n\nAdditionally, I performed maintenance on the backend deployment to keep the project running smoothly, including database checks and ensuring overall functionality. Since we had extra time, we also implemented Swagger to document all routes, making reviews and future improvements easier.",
             "team": [
                 {
                     "name": "Eduardo Alcântara",
