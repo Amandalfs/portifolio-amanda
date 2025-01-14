@@ -1,12 +1,15 @@
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import JavascriptIcon from "@/assets/icons/JavaScriptIcon.svg";
 import ReactIcon from "@/assets/icons/ReactIcon.svg";
 import NodeJsIcon from "@/assets/icons/NodeJsIcon.svg";  
 import TailwindIcon from "@/assets/icons/TailwindIcon.svg";
-import { useTranslations } from "next-intl";
 import DocIcon from "@/components/icons/DocIcon";
-import { Typography } from "@/components/ui/typography";
 import AvatarMandy from "@/components/imagens/AvatarMandy";
+import PrismaJsIcon from "@/components/icons/PrismaJsIcon";
+import NestJsIcon from "@/components/icons/NestJsIcon";
+import { Typography } from "@/components/ui/typography";
+import SvgTypescriptIcon from "@/components/icons/SvgTypescriptIcon";
 
 export default function About(){
     const  translate = useTranslations("about");
@@ -30,15 +33,26 @@ export default function About(){
         <article className="flex flex-col gap-8 md:w-[592px]">
             <ul className="flex flex-row gap-6">
                 <li>
-                    <Image src={JavascriptIcon} alt="javascript icon"/>
+                    <Image src={JavascriptIcon} alt="javascript icon" />
+                </li>
+                <li> 
+                    <Image src={ReactIcon} alt="react icon" />
                 </li>
                 <li>
-                    <Image src={ReactIcon} alt="react icon"/>
+                    <Image src={NodeJsIcon} alt="nodejs icon" />
                 </li>
                 <li>
-                    <Image src={NodeJsIcon} alt="nodejs icon"/>
+                    <Image src={TailwindIcon} alt="tailwind icon" />
                 </li>
-                <Image src={TailwindIcon} alt="tailwind icon"/>
+                <li>
+                    <PrismaJsIcon className="fill-primaryColor-400" />
+                </li>
+                <li>
+                    <NestJsIcon className="fill-primaryColor-400" />
+                </li>
+                <li>
+                    <SvgTypescriptIcon className="fill-primaryColor-400" />
+                </li>
             </ul>
             <div className="flex flex-col gap-4">
                 <div>
