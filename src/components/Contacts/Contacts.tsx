@@ -23,6 +23,8 @@ export default function Contacts() {
             gap-10
             md:flex-row
             md:justify-around
+            md:px-0
+            md:mx-6
         "
     >
         <article className="flex flex-col gap-10 md:w-[592px]">
