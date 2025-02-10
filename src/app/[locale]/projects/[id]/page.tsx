@@ -88,16 +88,16 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
                     <h1 className="font-medium text-3xl leading-10 text-textPrimary-light dark:text-textPrimary-dark">{project.title}</h1>
                     <div className="flex flex-col gap-6">
                         <div>
-                            <span className="font-bold text-textSecondary-light dark:text-textSecondary-dark">{locale === "en" ? "role: " : "minha função:"} </span>{project.role}
+                            <span className="font-bold text-textSecondary-light dark:text-textSecondary-dark text-base">{locale === "en" ? "Role: " : "Minha Função:"} </span>{project.role}
                         </div>
                         <div>
                             {!project.isSolo && (
-                                <span className="font-bold text-textSecondary-light dark:text-textSecondary-dark">
-                                    {locale === "en" ? "team: " : "time: "}{formattedMembers}
+                                <span className="font-bold text-textSecondary-light dark:text-textSecondary-dark text-base">
+                                    {locale === "en" ? "Team: " : "Time: "}{formattedMembers}
                                 </span>) }
                             {project.isSolo && (
                             <span className="font-bold text-textSecondary-light dark:text-textSecondary-dark">
-                                {locale === "en" ? "team: " : "time: "}{"Solo"}
+                                {locale === "en" ? "Team: " : "Time: "}{"Solo"}
                             </span>) }
                         </div>
                         <Typography.paragraph>
