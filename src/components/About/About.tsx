@@ -10,6 +10,7 @@ import PrismaJsIcon from "@/components/icons/PrismaJsIcon";
 import NestJsIcon from "@/components/icons/NestJsIcon";
 import { Typography } from "@/components/ui/typography";
 import SvgTypescriptIcon from "@/components/icons/SvgTypescriptIcon";
+import Link from "next/link";
 
 export default function About(){
     const  translate = useTranslations("about");
@@ -63,22 +64,24 @@ export default function About(){
                     {translate("description")}
                 </Typography.paragraph>
             </div>
-            <button 
-                className="
-                    w-36 h-14
-                    bg-primaryColor-500
-                    text-textPrimary-dark
-                    font-sans font-medium
-                    text-xs
-                    rounded-lg
-                    flex flex-row gap-2
-                    justify-center
-                    items-center
-                "
-            >
-                <DocIcon className="fill-textPrimary-dark" />
-                {translate("button-resume")}
-            </button>
+            <Link href={translate("link-pdf")} target="_blank" download>
+                <button 
+                    className="
+                        w-36 h-14
+                        bg-primaryColor-500
+                        text-textPrimary-dark
+                        font-sans font-medium
+                        text-xs
+                        rounded-lg
+                        flex flex-row gap-2
+                        justify-center
+                        items-center
+                        "
+                        >
+                    <DocIcon className="fill-textPrimary-dark" />
+                    {translate("button-resume")}
+                </button>
+            </Link>
         </article>
     </section>)
 }

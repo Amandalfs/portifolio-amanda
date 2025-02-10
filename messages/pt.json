@@ -16,7 +16,8 @@
         "title": "Sobre mim",
         "subtitle": "Sou uma desenvolvedora de software apaixonado em busca de minha primeira oportunidade.",
         "description": "Sou apaixonada por tecnologia devido ao seu poder transformador, que melhora nossas vidas de inúmeras maneiras. Essa paixão me motiva a constantemente buscar novos aprendizados. Além disso, aproveito meu tempo livre jogando jogos de automação, que refletem meu interesse por sistemas complexos.",
-        "button-resume": "Meu currículo"
+        "button-resume": "Meu currículo",
+        "link-pdf": "https://drive.google.com/file/d/1DztDMsIg2GfJn7bkP2InojfuEGw0ovvQ/view?usp=sharing&export=download"
     },
     "bestProjects": {
         "title": "Projetos",
