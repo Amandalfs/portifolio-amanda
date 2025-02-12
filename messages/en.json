@@ -10,7 +10,8 @@
         "subtitle": "Full-Stack Developer",
         "description": "Full-Stack Developer with expertise in Node.js, React, JavaScript, Git, HTML, CSS, Clean Architecture, and Test-Driven Development (TDD).",
         "button-about": "About me",
-        "button-projects": "Projects"
+        "button-projects": "Projects",  
+        "language": "en"
     },
     "about": {
         "title": "About Me",

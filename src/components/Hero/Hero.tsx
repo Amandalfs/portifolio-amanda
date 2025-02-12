@@ -6,6 +6,7 @@ import ArrowDown from '@/components/icons/ArrowDown';
 import Button from "@/components/ui/Button/Button";
 import { Typography } from "@/components/ui/typography";
 import Computer from "@/components/imagens/computer";
+import { Link } from '@/i18n/routing';
 
 export default function Hero(){
     const translate = useTranslations("hero");
@@ -19,14 +20,18 @@ export default function Hero(){
                 <Typography.paragraph>{translate("description")}</Typography.paragraph>
             </article>
             <article className="w-full flex flex-row gap-4 justify-center md:justify-start">
-                <Button color="secondary">
-                    <DocIcon className="fill-textSecondary-light dark:fill-textSecondary-dark"/>
-                    {translate("button-about")}
-                </Button>
-                <Button>
-                    {translate("button-projects")}
-                    <Image src={ArrowRight} alt="arrow right" />
-                </Button>
+                <Link href="#about">
+                    <Button color="secondary">
+                        <DocIcon className="fill-textSecondary-light dark:fill-textSecondary-dark"/>
+                        {translate("button-about")}
+                    </Button>
+                </Link>
+                <Link href={`/${translate("language")}/projects`}>
+                    <Button>
+                        {translate("button-projects")}
+                        <Image src={ArrowRight} alt="arrow right" />
+                    </Button>
+                </Link>
             </article>
             <article  className="relative">
                 <ArrowDown className="
