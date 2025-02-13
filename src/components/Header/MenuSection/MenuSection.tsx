@@ -32,7 +32,7 @@ export default function MenuSection() {
                 </Link>
             </li>
             <li className="text-textSecondary-light dark:text-textSecondary-dark text-xs">
-                <Link href="/#projects">
+                <Link href="/projects">
                     {translate("projects")}
                 </Link>
             </li>

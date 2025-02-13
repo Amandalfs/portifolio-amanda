@@ -10,8 +10,7 @@
         "subtitle": "Desenvolvedora Full-Stack",
         "description": "Desenvolvedora Full Stack com expertise em Node.js, React, JavaScript, Git, HTML, CSS, Arquitetura Limpa e Desenvolvimento Orientado a Testes (TDD).",
         "button-about": "Sobre mim",
-        "button-projects": "Projetos",
-        "language": "pt"
+        "button-projects": "Projetos"
     },
     "about": {
         "title": "Sobre mim",

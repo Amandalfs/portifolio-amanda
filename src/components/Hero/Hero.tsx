@@ -26,7 +26,7 @@ export default function Hero(){
                         {translate("button-about")}
                     </Button>
                 </Link>
-                <Link href={`/${translate("language")}/projects`}>
+                <Link href={"/projects"}>
                     <Button>
                         {translate("button-projects")}
                         <Image src={ArrowRight} alt="arrow right" />
