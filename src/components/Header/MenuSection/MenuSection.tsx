@@ -4,7 +4,6 @@ import { useTranslations } from "next-intl";
 import ChangeMode from "@/components/Header/MenuSection/ChangeMode/ChangeMode";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
-import path from "path";
 
 export default function MenuSection() {
     const pathname = usePathname(); 
