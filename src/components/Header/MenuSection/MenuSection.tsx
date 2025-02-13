@@ -1,9 +1,18 @@
+"use client"
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import ChangeMode from "@/components/Header/MenuSection/ChangeMode/ChangeMode";
+import { usePathname } from "next/navigation";
+import clsx from "clsx";
+import path from "path";
 
 export default function MenuSection() {
+    const pathname = usePathname(); 
     const translate = useTranslations("menu");
+    const isHome = !pathname.includes("/projects") && !pathname.includes("/contacts") && !pathname.includes("/about");
+    const isProjects = pathname.includes("/projects");
+    const isAbout = pathname.includes("/#about");
+    const isContacts = pathname.includes("/#contacts");
 
     return (<nav 
         className="w-[280px] h-screen 
@@ -21,22 +30,22 @@ export default function MenuSection() {
         "
     >   
         <ul className="flex flex-col gap-6 text-right">
-            <li className="text-textPrimary-light dark:text-textPrimary-dark text-xs font-bold">
+            <li className={clsx("text-textPrimary-light dark:text-textPrimary-dark text-xs", isHome && "font-bold")}>
                 <Link href="/#home">
                     Home
                 </Link>
             </li>
-            <li className="text-textSecondary-light dark:text-textSecondary-dark text-xs">
+            <li className={clsx("text-textPrimary-light dark:text-textPrimary-dark text-xs", isAbout && "font-bold")}>
                 <Link href="/#about">
                     {translate("about")}
                 </Link>
             </li>
-            <li className="text-textSecondary-light dark:text-textSecondary-dark text-xs">
+            <li className={clsx("text-textPrimary-light dark:text-textPrimary-dark text-xs", isProjects && "font-bold")}>
                 <Link href="/projects">
                     {translate("projects")}
                 </Link>
             </li>
-            <li className="text-textSecondary-light dark:text-textSecondary-dark text-xs">
+            <li className={clsx("text-textPrimary-light dark:text-textPrimary-dark text-xs", isContacts && "font-bold")}>
                 <Link href="/#contacts">
                     {translate("contacts")}
                 </Link>
